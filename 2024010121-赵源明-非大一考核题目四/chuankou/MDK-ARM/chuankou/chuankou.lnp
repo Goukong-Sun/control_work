@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"chuankou\startup_stm32f103xb.o"
+"chuankou\main.o"
+"chuankou\gpio.o"
+"chuankou\dma.o"
+"chuankou\tim.o"
+"chuankou\usart.o"
+"chuankou\stm32f1xx_it.o"
+"chuankou\stm32f1xx_hal_msp.o"
+"chuankou\stm32f1xx_hal_gpio_ex.o"
+"chuankou\stm32f1xx_hal_tim.o"
+"chuankou\stm32f1xx_hal_tim_ex.o"
+"chuankou\stm32f1xx_hal.o"
+"chuankou\stm32f1xx_hal_rcc.o"
+"chuankou\stm32f1xx_hal_rcc_ex.o"
+"chuankou\stm32f1xx_hal_gpio.o"
+"chuankou\stm32f1xx_hal_dma.o"
+"chuankou\stm32f1xx_hal_cortex.o"
+"chuankou\stm32f1xx_hal_pwr.o"
+"chuankou\stm32f1xx_hal_flash.o"
+"chuankou\stm32f1xx_hal_flash_ex.o"
+"chuankou\stm32f1xx_hal_exti.o"
+"chuankou\stm32f1xx_hal_uart.o"
+"chuankou\system_stm32f1xx.o"
+--strict --scatter "chuankou\chuankou.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "chuankou.map" -o chuankou\chuankou.axf
